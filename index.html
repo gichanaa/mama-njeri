@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama Njeri</title>
+</head>
+<body>
+  <h1>Mama Njeri</h1>
+  <table border="1">
+    <caption>MENU</caption>
+    <thead>
+      <tr>
+        <th>Dish</th>
+        <th>Price</th>
+        <th>Sample image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pilau</td>
+        <td>KSh 350</td>
+        <td><img src="images/pilau.svg" alt="Pilau image placeholder" width="100" height="100"></td>
+      </tr>
+      <tr>
+        <td>Ugali &amp; Sukuma</td>
+        <td>KSh 250</td>
+        <td><img src="images/ugali.svg" alt="Ugali and sukuma image placeholder" width="120" height="120"></td>
+      </tr>
+      <tr>
+        <td>Chapati (2)</td>
+        <td>KSh 100</td>
+        <td><img src="images/chapati.svg" alt="Chapati image placeholder" width="100" height="100"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form onsubmit="alert('Dish selected (class demonstration).'); return false;">
+    <label for="dish">Select a dish:</label>
+    <input type="text" id="dish" name="dish" required>
+    <input type="submit" value="Select">
+  </form>
+
+  <p>Forms</p>
+  <h2>Student registration</h2>
+  <p>Class demonstration only. Use sample details, not real personal information.</p>
+  <form onsubmit="alert('Registration form validated (class demonstration).'); return false;">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+      <br>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <br>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <label for="DOB">Date of Birth:</label>
+      <input type="date" id="DOB" name="DOB" required>
+      <br>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <p style="color:rgb(95, 160, 124);background-color:rgb(210, 30, 207)">inline styles</p>
+</body>
+</html>
